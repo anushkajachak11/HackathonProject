@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 1</title>
+</head>
+<body>
+    <header>
+         <nav>
+           <ul>
+               <li><a href="index.html">Home Page</a></li>
+               <li><a href="lecture1.html">Lecture 1</a></li>
+               <li><a href="lecture2.html">Lecture 2</a></li>
+               <li><a href="lecture3.html">Lecture 3</a></li>
+               <li><a href="lecture4.html">Lecture 4</a></li>
+               <li><a href="lecture5.html">Lecture 5</a></li>
+               <li><a href="lecture6.html">Lecture 6</a></li>
+           </ul>
+         </nav>
+   </header>
+
+   <main>
+       <h1>Lecture 1: Intoduction to Web Development and Internet Working:</h1>
+       <p>This lecture covers the fundamentals of the internet,IP Addressing ,MAC Address,Ports,DNS,and Data Transmission</p>
+       
+       <h2>What is internet?</h2>
+       <p>The Internet is a global network of connected computers that share information.It is also called a "network of networks"</p><p>Computers communicate by sending binary data (0s and 1s) as signals</p>
+           <!-- Image  -->
+        <h2>Diagram: How Internet Works</h2>
+        <img src="https://i.pinimg.com/736x/2a/07/6e/2a076ea141755e01eb8c19cb7b30d561.jpg" height="200px">
+
+
+       <h2>Why do we need Switches and Routers?</h2>
+       <ul>
+          <li><b>Switch:</b>Connects devices inside a local network(office/home).</li>
+          <li><b>Router:</b>Connects different networks together to form the Internet.</li>
+       </ul>
+       
+       <h2>What is an IP Address?</h2>
+       <p>An IP Address is a unique number assigned to every device on the Internet.</p>
+       <ul>
+          <li><b>Public IP:</b>Unique,used on the Internet(given by ISP).</li>
+          <li><b>Private IP:</b>Used only inside local networks(eg.,192.168.x.x).</li>
+       </ul>
+        <p><b>IPv4:</b>32-bit address ,~4.3 billion devices.
+          <b>IPv6:</b>128-bit address,almost unlimited devices.</p>
+
+        <h2>What is MAC Address?</h2>
+        <p>A MAC(Media Access Control) Address is a Permanent hardware ID of a network device.</p>
+        <p>Example: <code>3C:22:FB:A3:B4:C5</code></p>
+        <p><b>How to find?</b>On Windows:<code>ipconfig /all</code>,On macOS 
+        Linux: <code>ifconfig</code></p>
+
+        <h2>What are the Port Numbers?</h2>
+        <p>Port numbers identify which service or application is being used on a computer.</p>
+        <ul>
+            <li><b>Well-Known(0-1023):</b> HTTP 80,HTTPS 443,DNS 53</li>
+            <li><b>Dynamic (49152-65535):</b>Temporary , Client-side use</li>
+        </ul>
+
+        <h2>What is DNS(Domain Name System)?</h2>
+        <p>DNS is like the phonebook of the Internet.It translates domain names into IP addresses.</p>
+        <p><b>Steps of DNS Resoluation:</b></p>
+        <ol>
+            <li>Browser checks local cache.</li>
+            <li>Asks DNS Resolver (ISP/Google DNS).</li>
+            <li>Resolver queries Root -> TLD -> Authoritative Server </li>
+            <li>Final IP address is returned (eg.,google.com -> 142.250.72.206)</li>
+        </ol>
+        
+        <h2>How is data sent on the Internet?</h2>
+        <p>Data is divided into small packets before transmission.</p>
+        <ul>
+            <li>Packets travel separately and may take different routes. </li>
+            <li>TCP ensures packets arrive in correct order and without errors. </li>
+        </ul>
+        <p><b>TCP/IP Protocol:</b> Provides reliable communication for all users.</p>
+
+        <p>
+            <a href="index.html">Back to Library</a>
+            <br>
+            <a href="lecture2.html">Lecture 2</a>
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <h2> Watch and Learn:</h2>
+       <iframe src="https://www.youtube.com/embed/1pcikNlDB-4" allowfullscreen></iframe>
+         
+
+
+
+   </main>
+</body>
+</html>

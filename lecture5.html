@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <header>
+         <nav>
+           <ul>
+               <li><a href="index.html">Home Page</a></li>
+               <li><a href="lecture1.html">Lecture 1</a></li>
+               <li><a href="lecture2.html">Lecture 2</a></li>
+               <li><a href="lecture3.html">Lecture 3</a></li>
+               <li><a href="lecture4.html">Lecture 4</a></li>
+               <li><a href="lecture5.html">Lecture 5</a></li>
+               <li><a href="lecture6.html">Lecture 6</a></li>
+           </ul>
+         </nav>
+   </header>
+   <main>
+       <h1>Lecture 5: HTML Forms:</h1>
+       <h2>The &lt;form&gt;Tag:</h2>
+       <ul>
+         <li>Main Container for all form elements.</li>
+         <li>Used to send data from user-server.</li>
+         <li>Attributes:
+            <ul>
+              <li><b>action:</b> - URL where data is sent.</li>
+             <li><b>method:</b> - <i>GET</i> (data visible in URL) or <i>POST</i> (data hidden in body)</li>
+            </ul>
+         </li>
+        </ul>
+
+        <pre>
+    &lt;form action ="/submit"
+    method="post"&gt;
+    &lt;/form&gt;
+       </pre>
+
+    <h2> The &lt;input&gt; Element:</h2>
+    <ul> 
+        <li>Creates fields for user input.</li>
+        <li>Types:text,password,number,email,date,color,range,file,etc.</li>
+        <li>Attributes:
+            <ul>
+                <li><b>name</b> - key sent to server.</li>
+                <li><b>placeholder</b> - hint text inside box.</li>
+                <li><b>required</b> - makes field compulsory.</li>
+            </ul>
+        </li>
+    </ul>
+
+        <pre>
+    &lt;input type="text" name="username" 
+    placeholder="EnterName" required&gt;
+        </pre>
+
+    <h2>&lt;label&gt; Tag:</h2>
+    <ul>
+        <li>Provides descripsion to input field.</li>
+        <li>Connects to input using <b>for</b>(label) and <b>id</b>(input).</li>
+        <li>Improves usability and accessibility.</li>
+    </ul>
+        <pre>
+    &lt;label for="fname"&gt;First Name:&lt;/label&gt;
+    &lt;input type="text" id="fname" name="fname"&gt;
+        </pre>
+
+    <h2>Submit Buttons</h2>
+  <ul>
+     <li>Used to send form data.</li>
+    <li>Two ways:
+        <ul>
+            <li>&lt;input type="submit"&gt; - simple<br></li>
+            <li>&lt;button type="submit"&gt; ... &lt;/button&gt; - flexible, allows text/images</li>
+        </ul>
+    </li>
+  </ul>
+
+  <pre>
+&lt;input type="submit" value="Submit"&gt;
+&lt;button type="submit"&gt;&lt;b&gt;Submit&lt;/b&gt; Form&lt;/button&gt;
+  </pre>
+
+  <h2>Radio Buttons:</h2>
+  <ul>
+      <li>Allow only ONE option from a group.</li>
+      <li>All radios in group share same <b>name</b>.</li>
+      <li>Each radio must have unique <b>id</b> and <b>value</b>.</li>
+  </ul>
+
+  <pre>
+&lt;label&gt;T-Shirt Size:&lt;/label&gt;&lt;br&gt;
+&lt;input type="radio" id="s" name="size" value="small"&gt;
+&lt;label for="s"&gt;Small&lt;/label&gt;&lt;br&gt;
+
+&lt;input type="radio" id="m" name="size" value="medium"&gt;
+&lt;label for="m"&gt;Medium&lt;/label&gt;
+  </pre>
+
+  <h2>Checkboxes:</h2>
+  <ul>
+    <li>Allow MULTIPLE selections.</li>
+    <li>Same <b> name </b> groups them together.</li>
+    <li>Each has unique <b>id</b> + <b>value</b>.</li>
+  </ul>
+
+
+  <h2>Textarea:</h2>
+  <ul>
+    <li>For long multi-line text input.</li>
+    <li>Attributes: <b>rows</b> (height),<b>cols</b>(width).</li>
+  </ul>
+
+  <pre>
+&lt;textarea id="msg" name="message" rows="4" cols="40"&gt;&lt;/textarea&gt;
+  </pre>
+
+  <h2>Dropdown:(&lt;select&gt;)</h2>
+  <ul>
+    <li>Compact list of many options.</li>
+    <li>Uses &lt;option&gt; for each choice.</li>
+    <li><b>value</b> is sent to server, visible text is shown to user.</li>
+  </ul>
+
+  <pre>
+&lt;select id="country" name="country"&gt;
+  &lt;option value=""&gt;--Choose--&lt;/option&gt;
+  &lt;option value="in"&gt;India&lt;/option&gt;
+  &lt;option value="us"&gt;USA&lt;/option&gt;
+&lt;/select&gt;
+  </pre>
+
+  <h2>Useful Input Types (HTML5):</h2>
+  <ul>
+    <li><b>password</b> - hides typed text</li>
+    <li><b>number</b> (with min, max) - restrict numeric range</li>
+    <li><b>date</b> - calendar picker</li>
+    <li><b>color</b> - color picker</li>
+    <li><b>range</b> - slider control</li>
+    <li><b>file</b> - upload files</li>
+  </ul>
+
+  <h2>Important Attributes:</h2>
+  <ul>
+      <li><b>id</b> - unique identifier on page</li>
+      <li><b>name</b> - data key for server</li>
+      <li><b>placeholder</b> - hint text</li>
+      <li><b>required</b> - makes input compulsory</li>
+      <li><b>value</b> - default value</li>
+      <li><b>min/max</b> - restrict numbers/dates</li>
+  </ul>
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <h2>Watch and Learn:</h2>
+       <iframe src="https://www.youtube.com/embed/a4j9R_DvZ8M" allowfullscreen></iframe>
+   </main>
+    
+</body>
+</html>
