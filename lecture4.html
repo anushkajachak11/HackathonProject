@@ -20,53 +20,192 @@
          </nav>
    </header>
    <main>
-       <h1>Lecture 4: File Path in HTML and Boilerplate in HTMl:</h1>
-       
+       <h1>Lecture 4: File Path in HTML and Boilerplate in HTML:</h1>
+       <h2> File Path System:</h2>
+       <p>A website is not a single file. It's a collection of HTML, CSS, JS, images, videos etc.  
+       Browser needs the <b>correct address</b> to locate these files. This address is called a <b>File Path</b>.</p>
 
+        <img src="https://www.itgeared.com/wp-content/uploads/absolute_and_relative_paths.jpg" height="300px">
 
+        <h3>Relative Path:</h3>
+        <ul>
+          <li>This path is based on the location of your current HTML file.</li>
+          <li>Used for files that are part of your own project.</li>
+          <li>Depends on folder structure.</li>
+        </ul>
+        <h4>Example:</h4>
+        &lt;img src="photo.jpg"&gt;
+        <hr>
 
+        <h3>Absolute Path:</h3>
+        <ul>
+           <li>This is the complete address of a file (starts from the domain name).</li>
+           <li>Does not depend on the HTML file's location.</li>
+           <li>Mostly used for external resources (Google Fonts, CDN, hosted images).</li>
+        </ul>
+        <h4>Example:</h4>
+        &lt;img src="https://www.example.com/images/logo.png"&gt;
 
+          
+        <h3>Windows vs macOS/Linux:</h3>
+        <table border="1">
+          <tr>
+            <th>Feature</th>
+            <th>Windows</th>
+            <th>macOS / Linux</th>
+        </tr>
+          <tr>
+            <td>Root</td>
+            <td>Drive Letter (C:\)</td>
+            <td>Forward Slash (/)</td>
+        </tr>
+          <tr>
+            <td>Separator</td>
+            <td>Backslash\</td>
+            <td>Forward Slash /</td>
+        </tr>
+          <tr>
+            <td>Example</td>
+            <td>C:\Users\John\Docs\file.txt</td>
+            <td>/Users/john/Docs/file.txt</td>
+        </tr>
+        </table>
+        <br>
+        <hr>
 
+  <h2>HTML Boilerplate:</h2>
 
+  <p>Boilerplate = standard template that sets up every HTML file properly.  
+  Without it, browser <b>guesses</b> → can cause quirks mode, broken characters, bad SEO.</p>
 
+  <h3>Basic Structure:</h3>
+  <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
+&lt;/body&gt;
+&lt;/html&gt;
+  </pre>
 
+  <h3>Why Each Line:</h3>
+  <ul>
+    <li><b>&lt;!DOCTYPE html&gt;:</b> tells browser to use HTML5 standards mode.</li>
+    <li><b>&lt;html lang="en"&gt;:</b> declares page language (important for SEO + screen readers).</li>
+    <li><b>&lt;meta charset="UTF-8"&gt;:</b> ensures correct text/characters everywhere.</li>
+    <li><b>&lt;meta name="viewport"&gt;:</b> makes site responsive on mobile.</li>
+    <li><b>&lt;title&gt;:</b> text in browser tab + search results.</li>
+    <li><b>&lt;body&gt;:</b> all visible content goes here.</li>
+  </ul>
+  <hr>
 
+  <h2>Multipage Website:</h2>
+  <p>Real websites use multiple pages (Home, About, Contact).  
+  All pages should share <b>common header + footer</b> and have <b>navigation menu</b> to connect them.</p>
 
+  <h3>Navigation Example:</h3>
+  <pre>
+&lt;header&gt;
+  &lt;nav&gt;
+    &lt;a href="index.html"&gt;Home&lt;/a&gt;
+    &lt;a href="about.html"&gt;About&lt;/a&gt;
+    &lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+  </pre>
 
+  <hr>
 
+  <h2>&lt;div&gt;, class, id:</h2>
+  <ul>
+    <li><b>&lt;div&gt;:</b> generic box to group elements (block-level).</li>
+    <li><b>id:</b> unique identifier → only 1 per page (like Aadhaar number).</li>
+    <li><b>class:</b> reusable label → can be used on many elements (like Job Title).</li>
+  </ul>
 
+  <h3>Example:</h3>
+  <pre>
+&lt;div id="main-header"&gt;Header Content&lt;/div&gt;
 
+&lt;div id="featured" class="profile-card"&gt;Special Profile&lt;/div&gt;
+&lt;div class="profile-card"&gt;Normal Profile&lt;/div&gt;
+&lt;div class="profile-card"&gt;Normal Profile&lt;/div&gt;
+  </pre>
+  <hr>
+  <h2>&lt;span&gt;:</h2>
+  <p>Inline version of div.  
+  Used for highlighting specific words <i>inside</i> text without breaking the line.</p>
+  <pre>
+&lt;p&gt;This is very &lt;span class="highlight"&gt;important&lt;/span&gt; text.&lt;/p&gt;
+  </pre>
+  <hr>
 
+  <h2>Semantic Tags:</h2>
+  <ul>
+    <li><b>&lt;header&gt;:</b> top section, usually contains logo + nav.</li>
+    <li><b>&lt;footer&gt;:</b> bottom section, copyright, contact info.</li>
+    <li><b>&lt;main&gt;:</b> unique main content of the page (only one per page).</li>
+  </ul>
+  <hr>
+    <h2>Watch and Learn:</h2>
+    <iframe src="https://www.youtube.com/embed/k78lNSAB8VY" allowfullscreen></iframe>
+    <hr>
+    <ul>
+        <li><a href="index.html">Back to Library</a></li>
+        <br>
+        <li><a href="lecture5.html">Lecture 5</a></li>
+    </ul>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       <h2>Watch and Learn:</h2>
-       <iframe src="https://www.youtube.com/embed/k78lNSAB8VY" allowfullscreen></iframe>
    </main>
     
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       

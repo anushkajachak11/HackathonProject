@@ -20,14 +20,123 @@
          </nav>
    </header>
    <main>
-       <h1>Lecture 6: Deploy your First Website,Media Tag and MultiPage Website:</h1>
+       <h1>Lecture 6:Deployment Your First Website,Media Tag and MultiPage Website:</h1>
 
        <h2>HTML Media:</h2>
-    <p>
+       <p>
         The web is more than just <b>text</b> and <b>images</b>. Modern webpages must be able to play 
         <b>videos</b> and <b>audio</b> without<br> relying on old plugins like Flash or QuickTime.
          HTML5 solved this with the <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> tags.
-    </p>
+        </p>
+        <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1676758594512/3d044ed9-e26b-4bac-b890-77d965e38077.jpeg?auto=compress,format&format=webp" height="300px">
+
+
+        <h2>The &lt;video&gt; Tag:</h2>
+           <pre>
+        &lt;video src="movie.mp4"&gt;&lt;/video&gt;
+           </pre>
+        <p>This shows only the first frame of the video, without controls.</p>
+
+        <h3>With Controls:</h3>
+           <pre>
+        &lt;video controls height="300px"&gt;
+        &lt;Source src="movie.mp4" &lt;/video&gt;
+           </pre>
+        <p>Now the user can play, pause, change volume, and fullscreen.</p>
+
+        <h3>Common Attributes:</h3>
+    <ul>
+        <li><b>controls</b> - adds default player controls.</li>
+        <li><b>width</b> and <b>height</b> resize the player.</li>
+        <li><b>autoplay</b> - starts automatically.</li>
+        <li><b>muted</b> - starts with no sound.</li>
+        <li><b>loop</b> - repeats after finishing.</li>
+        <li><b>poster</b> - image shown before play.</li>
+    </ul>
+        <pre>
+    &lt;video controls&gt;
+    &lt;source src="video.mp4" width="500px" height="300px" autoplay muted loop poster="nature.jpg";&lt;/video&gt;
+       </pre>
+    <hr>
+
+    <h2>The &lt;audio&gt; Tag:</h2>
+    <p>The &lt;audio&gt; tag is used to play sound files like mp3 or wav.</p>
+      <pre>
+    &lt;audio controls&gt;
+    &lt;source src="song.mp3" &lt;/audio&gt;
+      </pre>
+    <p>It supports attributes like <b>controls</b>, <b>autoplay</b>, <b>loop</b>, and <b>muted</b>.</p>
+      </pre>
+    <hr>
+
+    <h2>Multi-Page Website:</h2>
+    <p>A professional website is never just one page. Instead, it contains 
+    multiple connected pages. These pages are linked with the help of navigation links.</p>
+
+    <ul>
+       <li>Home Page</li>
+       <li>About us</li>
+       <li>Contact us</li>
+       <li>Lectures</li>
+    </ul>
+    <p>These pages are connected through navigation links.</p>
+
+    <h3>Example Of Navigation bar:</h3>
+    &lt;nav&gt;<br>
+        &lt;a href="index.html"&gt;Home Page &lt;/a&gt;<br>
+        &lt;a href="about.html"&gt;About us&lt;/a&gt;<br>
+        &lt;a href="contact.html"&gt;Contact us &lt;/a&gt;<br>
+        &lt;a href="lecture.html"&gt;Lectures &lt;/a&gt;<br>
+    &lt;/nav&gt;
+
+    <h3>Steps to Create Multi-Page Website:</h3>
+    <ol>
+        <li>Create individual HTML pages (index, about, contact, lecture).</li>
+        <li>Add a navigation bar on each page.</li>
+        <li>Connect pages using the <code>&lt;a&gt;</code> tag.</li>
+        <li>Open in a browser and test all links.</li>
+        <li>Deploy the website to make it live.</li>
+    </ol>
+
+    <h3>Best Practices</h3>
+    <ul>
+        <li>Always name your homepage as <b>index.html</b>.</li>
+        <li>Use lowercase filenames (about.html, contact.html).</li>
+        <li>Keep the same navigation bar on all pages.</li>
+        <li>Organize images and files in proper folders.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Deploying Your First Website:</h2>
+    <h3>Using Netlify</h3>
+    <ol>
+        <li>Sign up at <a href="https://www.netlify.com/">Netlify</a>.</li>
+        <li>Drag and drop your project folder.</li>
+        <li>Instantly get a free live link.</li>
+    </ol>
+
+    <h3>Pro Tips:</h3>
+    <ul>
+        <li>Check all links before deployment.</li>
+        <li>Use meaningful page names and titles.</li>
+        <li>Keep file names short and simple.</li>
+        <li>Add <code>alt</code> text to images.</li>
+    </ul>
+    <img src="https://www.rlogical.com/wp-content/uploads/2023/03/31a-1200x900.webp" height="300px">
+    <hr>
+
+    <h3>Watch and Learn:</h3>
+    <iframe src="https://www.youtube.com/embed/NGYp1zCBthk" allowfullscreen></iframe>
+    <hr>
+    <ul>
+        <li><a href="index.html">Back to Library</a></li>
+        <br>
+    </ul>
+
+    </main>
+</body>
+</html>
 
 
 
@@ -38,21 +147,12 @@
 
 
 
-       <h2>Watch and Learn:</h2>
-       <iframe src="https://www.youtube.com/embed/NGYp1zCBthk" allowfullscreen></iframe>
 
 
 
 
 
-
-
-
-
-   </main>
 
 
    
-    
-</body>
-</html>
+  
